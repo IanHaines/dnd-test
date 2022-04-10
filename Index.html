@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Rolling Dice</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">Dungeons.Dragons</a>
+            </header>
+
+            <h1><span>Dungeons & Dragons</span> Repetitive Learning</h1>
+
+            <p>Using the crash course to create my own designs and experiment with a few things between sessions of my learning.</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                    <label for="realm">Enter Your Realm:</label>
+                    <input type="text" name="realm" id="realm">
+                    <p>Example: "Exandria"</p>
+                    </div>
+
+                    <input type="button" value="Roll Your Dice" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="Roleplay">
+        <div class="right-col">
+            <h2>Roleplay! Adventure!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam perferendis repellat blanditiis beatae molestias explicabo quo nesciunt delectus odio!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint assumenda hic maxime, itaque soluta harum suscipit molestias at vel cupiditate!</p>
+        </div>
+        <img src="images/dndparty.webp" alt="picture of adventurers">
+    </section>
+
+    <script>
+
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = "grid"
+            overlay.classList.add('animate-overlay')
+        })
+
+    </script>
+</body>
+</html>
